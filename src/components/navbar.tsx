@@ -17,9 +17,7 @@ const Navbar = () => {
     const { items } = useContext(CartContext);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-slate-100 p-4 flex justify-between items-center">
-      {/* header then avatarGrop then cart and kitchen icon */}
-
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-slate-100 py-4 px-16 flex justify-between items-center">
       <Flex vertical={true}>
         <h1 className="text-2xl">Welcome to our company</h1>
         <p>You have started your 30 day trial</p>
@@ -56,15 +54,15 @@ const Navbar = () => {
       </Flex>
 
       <Flex gap={10}>
-        <Badge count={items.length} color="yellow" offset={[-28, 0]}>
-          <button className="cursor-pointer p-2 rounded-full bg-slate-300" type="button" onClick={() => setCartOpen(!cartOpen)}>
-            <FaCartShopping size={18} />
+        <Badge count={items.length} color="#d4b106" offset={[-28, 0]}>
+          <button className="cursor-pointer p-3 rounded-full bg-blue-100" type="button" onClick={() => setCartOpen(!cartOpen)}>
+            <FaCartShopping size={18} className="text-slate-600" />
           </button>
         </Badge>
 
-        <Badge count={1} color="yellow" offset={[-28, 0]}>
-          <button className="cursor-pointer p-2 rounded-full bg-slate-300" type="button" onClick={() => setKitchenOpen(!kitchenOpen)}>
-            <RiFridgeFill size={18} />
+        <Badge count={1} color="#d4b106" offset={[-28, 0]}>
+          <button className="cursor-pointer p-3 rounded-full bg-blue-100" type="button" onClick={() => setKitchenOpen(!kitchenOpen)}>
+            <RiFridgeFill size={18} className="text-slate-600" />
           </button>
         </Badge>
       </Flex>

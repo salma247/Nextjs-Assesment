@@ -1,44 +1,49 @@
 import Card from "@/components/Card"
 import { Col, Row } from "antd"
+import { IoDiamondOutline } from "react-icons/io5";
 
 const services = [
   {
     id: 1,
     title: "Apps",
     description: "Get your mobile app built by us",
-    color: "blue",
+    color: "#2563EB",
     dtsu: 100,
+    image: "apps.svg"
   },
   {
     id: 2,
     title: "BI",
     description: "Create Dashboards",
-    color: "green",
+    color: "#F59E0B",
     dtsu: 100,
+    image: "bi.svg"
   },
   {
     id: 3,
     title: "HR",
     description: "Talents",
-    color: "red",
+    color: "#F87171",
     dtsu: 50,
+    image: "hr.svg"
   },
   {
     id: 4,
     title: "Operations",
     description: "ERP Management",
-    color: "yellow",
+    color: "#10B981",
     dtsu: 100,
+    image: "operations.svg"
   },
 ]
 
 export default function Home() {
   return (
-    <div className="p-16">
-      <h1>Home</h1>
-      <Row gutter={16} className="mt-4" justify="space-between">
+    <div className="p-16 h-full min-h-screen pt-28" id="home">
+      <h1 className="text-4xl flex items-center gap-2 text-cyan-600">Get Support <IoDiamondOutline/></h1>
+      <Row gutter={[20,20]} className="mt-6" justify="space-between" align="middle">
         {services.map((service, index) => (
-          <Col key={index} span={6}>
+          <Col key={index} sm={24} md={12} lg={6}>
             <Card {...service} />
           </Col>
         ))}
