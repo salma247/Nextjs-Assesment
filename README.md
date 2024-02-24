@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Task README
+
+## Project Overview
+
+This project is a frontend task aimed at building a web page based on the provided design in Figma. The task involves creating a page with four main cards representing company pillars. Each card should lead to a blank page with the respective pillar name. Additionally, there are navigation buttons for a Cart Menu and a Kitchen Menu. Users can add pillars to the Cart Menu and move them to the Kitchen Menu by clicking on "Checkout".
+
+## Task Requirements
+
+### Technical Stack
+- **Framework**: Next.js
+- **UI Library**: Ant Design
+- **State Management**: React Context
+
+### Task Details
+- Build a web page according to the design provided in the Figma link.
+- Implement functionality to add pillars to the Cart Menu and move them to the Kitchen Menu.
+- Utilize Next.js for the project structure.
+- Integrate Ant Design components for UI elements.
+- Manage state using React Context.
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```
+   git clone <repository-url>
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Navigate to the project directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```
+   cd <project-directory>
+   ```
 
-## Learn More
+3. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. Open [http://localhost:3000](http://localhost:3000) to view the project in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Continuous Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Pending Tasks
+I have completed most of the requirements for this task. However, there are a few things that I could not implement due to time constraints. Here are some of the pending tasks:
+
+- [ ] Implement more functionality for the Cart and Kitchen Menus (i.e. remove items, clear all items, etc.)
+- [ ] UI improvements for the Cart and Kitchen Menus.
+- [ ] Checkout functionality for the Cart Menu.
+- [ ] Add tests for the components and functionality.
+
