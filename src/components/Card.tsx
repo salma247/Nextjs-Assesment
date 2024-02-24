@@ -38,7 +38,7 @@ const Card = ({ id, title, description, color, dtsu, image }: CardProps) => {
                 addItem({ id: id, name: title, quantity: 1, price: dtsu })
               }
             >
-              <IoAddOutline size={20} />
+              <IoAddOutline size={20} className="hover:text-blue-400 transition-all" />
             </button>
             <Link href={`/service/${title}`} className="p-2 rounded-full bg-black/20">
               <CiShare1 size={20} />

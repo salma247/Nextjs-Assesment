@@ -7,7 +7,7 @@ const services = [
     id: 1,
     title: "Apps",
     description: "Get your mobile app built by us",
-    color: "#2563EB",
+    color: "#0A488F",
     dtsu: 100,
     image: "apps.svg"
   },
@@ -15,7 +15,7 @@ const services = [
     id: 2,
     title: "BI",
     description: "Create Dashboards",
-    color: "#F59E0B",
+    color: "#579064",
     dtsu: 100,
     image: "bi.svg"
   },
@@ -23,7 +23,7 @@ const services = [
     id: 3,
     title: "HR",
     description: "Talents",
-    color: "#F87171",
+    color: "#950000",
     dtsu: 50,
     image: "hr.svg"
   },
@@ -31,7 +31,7 @@ const services = [
     id: 4,
     title: "Operations",
     description: "ERP Management",
-    color: "#10B981",
+    color: "#8F6C0A",
     dtsu: 100,
     image: "operations.svg"
   },
