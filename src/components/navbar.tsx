@@ -54,13 +54,13 @@ const Navbar = () => {
       </Flex>
 
       <Flex gap={10}>
-        <Badge count={items.length} color="#FFD900" offset={[-35, 4]} style={{ color: "#000" }}>
+        <Badge count={items.length} color="#FFD900" offset={[-35, 4]} style={{ color: "#000" }} showZero>
           <button className="cursor-pointer p-3 rounded-full bg-blue-100" type="button" onClick={() => setCartOpen(!cartOpen)}>
             <FaCartShopping size={18} className="text-slate-600" />
           </button>
         </Badge>
 
-        <Badge count={1} color="#FFD900" offset={[-35, 4]} style={{ color: "#000" }}>
+        <Badge count={1} color="#FFD900" offset={[-35, 4]} style={{ color: "#000" }} showZero>
           <button className="cursor-pointer p-3 rounded-full bg-blue-100" type="button" onClick={() => setKitchenOpen(!kitchenOpen)}>
             <RiFridgeFill size={18} className="text-slate-600" />
           </button>
